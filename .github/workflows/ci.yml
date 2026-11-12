@@ -82,10 +82,3 @@ jobs:
             docker push ${{ env.IMAGE }}:${{ github.ref_name }}
           fi
 ```[cite: 6, 7]
-
-### What to do next:
-1. Replace the contents of your `.github/workflows/ci.yml` with the code above.
-2. Commit and push the changes to your repository.
-3. Check the **Actions** tab on GitHub to verify that the build succeeds and pushes the package. Once merged, look at the right-hand sidebar of your main repository page to see your new **Packages** section[cite: 7]! 
-
-Let me know once you're ready for **Part C (Vulnerability check with Trivy)**[cite: 7].
