@@ -80,5 +80,4 @@ jobs:
           if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
             docker tag notes-api:${{ github.sha }} ${{ env.IMAGE }}:${{ github.ref_name }}
             docker push ${{ env.IMAGE }}:${{ github.ref_name }}
-          fi
-```[cite: 6, 7]
+          fi```[cite: 6, 7]
