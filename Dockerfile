@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.12
 
 # Create a non-privileged user and group
 RUN useradd --create-home appuser
