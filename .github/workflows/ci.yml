@@ -70,3 +70,19 @@ jobs:
             docker tag notes-api:${{ github.sha }} "$IMAGE:${{ github.ref_name }}"
             docker push "$IMAGE:${{ github.ref_name }}"
           fi
+
+          echo "***" | docker login ghcr.io -u "Polyma-29" --password-stdin
+          docker push "$IMAGE:020064ba997327c8b7b1048cfc56ea04b98df8b2"
+          if [ "refs/heads/main" = "refs/heads/main" ]; then
+           docker tag "$IMAGE:020064ba997327c8b7b1048cfc56ea04b98df8b2" "$IMAGE:latest"
+           docker push "$IMAGE:latest"
+          fi
+
+          if [ "branch" = "tag" ]; then
+           docker tag "$IMAGE:020064ba997327c8b7b1048cfc56ea04b98df8b2" "$IMAGE:main"
+           docker push "$IMAGE:main"
+          fi
+
+          shell: /usr/bin/bash -e {0}
+        env: 
+          IMAGE: ghcr.io/polyma-29/devops-labs-fn373223046
