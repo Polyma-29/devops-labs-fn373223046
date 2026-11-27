@@ -9,6 +9,7 @@ nav:
   - Home: index.md
   - Service: service.md
   - Runbook: runbook.md
+  - Kubernetes: kubernetes.md
   - Glossary: glossary.md
   - On-call: oncall.md
   - Decisions:
