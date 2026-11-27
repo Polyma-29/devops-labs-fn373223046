@@ -4,6 +4,7 @@ Documentation of the service, kept next to the code and published as a site. / �
 
 - [Service / Услугата](service.md)
 - [Runbook](runbook.md)
+- [Kubernetes (Lab 8)](kubernetes.md)
 - [Glossary / Речник](glossary.md)
 - [Decisions / Решения](adr/index.md)
 - [On-call / Дежурства](oncall.md)
